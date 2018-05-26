@@ -15,24 +15,19 @@ int main(){
     int b; 
     scanf("%d %d",&a,&b);
     int m; 
-    int n; 
+    int n;
+    int d;
     scanf("%d %d",&m,&n);
-    int *apple = malloc(sizeof(int) * m);
-    for(int apple_i = 0; apple_i < m; apple_i++){
-       scanf("%d",&apple[apple_i]);
-    }
-    int *orange = malloc(sizeof(int) * n);
-    for(int orange_i = 0; orange_i < n; orange_i++){
-       scanf("%d",&orange[orange_i]);
-    }
     int c1=0, c2=0;
     for (int i=0; i<m; ++i){
-        if (apple[i]>=s-a && apple[i]<=t-a)
-            ++c1;
+        scanf("%d", &d);
+        d = a + d;
+        if(d>=s && d<=t) ++c1;
     }
     for (int i=0; i<n; ++i){
-        if (orange[i]>=s-b && orange[i]<=t-b)
-            ++c2;
+        scanf("%d", &d);
+        d = b + d;
+        if(d>=s && d<=t) ++c2;
     }
     printf("%d\n", c1);
     printf("%d", c2);

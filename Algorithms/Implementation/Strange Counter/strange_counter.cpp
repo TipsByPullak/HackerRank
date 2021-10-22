@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-    int t;
+    long t;
     cin >> t;
 
-    int div = 3;
+    long div = 3;
 
     while(t > div)
     {
@@ -17,4 +17,5 @@ int main()
 
     cout << (div - t + 1) << endl;
 
+    return 0;
 }

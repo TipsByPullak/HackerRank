@@ -8,7 +8,7 @@ int workbook(int n, int k, vector<int> arr) {
     
     int page = 1;
     
-    for(unsigned int i = 0; i < arr.size() ++i)
+    for(unsigned int i = 0; i < arr.size(); ++i)
     {
         int curr_no_of_ques = arr[i];
         

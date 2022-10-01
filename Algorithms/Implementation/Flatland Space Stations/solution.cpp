@@ -21,7 +21,7 @@ int furthest_space_station(int n, vector<int> cities)
         
         for_each(cities.begin(), cities.end(), &subtractGlobalCity);
         
-        auto curr_max_itr = max_element(cities.begin(), cities.end());
+        auto curr_max_itr = min_element(cities.begin(), cities.end());
         
         if (*curr_max_itr > ans) ans = *curr_max_itr;
     }
@@ -41,7 +41,7 @@ int main()
         int temp;
         cin >> temp;
         
-        cities.push_back(temp - 1);
+        cities.push_back(temp);
     }
     
     cout << furthest_space_station(n, cities) << endl;
